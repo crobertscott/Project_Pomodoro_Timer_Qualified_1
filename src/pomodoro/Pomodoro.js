@@ -106,13 +106,19 @@ function Pomodoro() {
             
             <button
               type="button"
+              disabled= {!isTimerRunning}
               className="btn btn-secondary"
+              data-testid="stop"
               title="Stop the session"
-              onClick={stopSession}
-              disabled={!isTimerRunning}
+              onClick={() => {
+                setIsSessionStopped(true);
+                setIsTimerRunning(false);
+
+              }}
             >
               <span className="oi oi-media-stop" />
             </button>
+
           </div>
         </div>
       </div>
