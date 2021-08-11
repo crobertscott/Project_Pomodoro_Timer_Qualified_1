@@ -1,6 +1,6 @@
 # Pomodoro Timer
 
-![app preview](pomodoro.png)
+![app preview](Pomodoro.png)
 
 ## Live Demo:
 
